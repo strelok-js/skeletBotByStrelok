@@ -12,6 +12,7 @@ bot.login(config.token);
 
 const DiscordDB = require('simple-discord.db'); //Память
 bot.Memory = new DiscordDB("Memory", bot); //Памятная память
+bot.Memory.save();
 
 require('./handlers')(bot); //Запуск handler'ов
 require('./events')(bot); //Запуск ивентов
