@@ -1,0 +1,23 @@
+{
+	"name": "Memory",
+	"guilds": {
+		"899200433552252989": {
+			"id": "899200433552252989",
+			"name": "Strelok.js Verification And Testing Server",
+			"prefix": "g/",
+			"members": {
+				"423499015007502336": {
+					"id": "423499015007502336",
+					"name": "☭ STRELOK ☭",
+					"guildId": "899200433552252989"
+				}
+			}
+		}
+	},
+	"users": {
+		"423499015007502336": {
+			"id": "423499015007502336",
+			"name": "☭ STRELOK ☭"
+		}
+	}
+}
