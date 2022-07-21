@@ -14,7 +14,7 @@ module.exports = (bot) => {
 
     bot.on("messageCreate", async (message)=> {
         const {content, author, guild} = message; //Разбивка на компоненты
-        const memGuild = bot.Memory.guilds.get(guild.id);
+        const memGuild = bot.Memory.guilds.get(guild?.id);
         if(
             author.bot || //Если автор - бот
             !memGuild || //Если нет гильди в памяти
