@@ -7,11 +7,11 @@
 
  Для работы бота необходим discord.js@14.0.1, fs, simple-discord.db, canvas.
  Установить библиотеку можно npm install <название библиотеки>
- Например: npm install discord.js@4.0.1
+ Например: npm install discord.js@14.0.1
 
 # Инструкция по установке
  Для установки всех библиотек, используйте:
-  npm install discord.js@4.0.1 fs simple-discord.db canvas
+  npm install discord.js@14.0.1 fs simple-discord.db canvas
 
 # Помощь
 
