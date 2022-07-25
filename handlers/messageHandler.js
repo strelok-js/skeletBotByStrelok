@@ -22,7 +22,7 @@ module.exports = (bot) => {
         ) return; //Не выполняем код дальше
         
         const 
-            messageArray = content.trim().split(' '), 
+            messageArray = content.toLowerCase().trim().split(' '), 
             command = messageArray[0].replace(memGuild.prefix, ""),
             args = messageArray.slice(1), 
             messageArrayFull = content.trim().split(' '), 
