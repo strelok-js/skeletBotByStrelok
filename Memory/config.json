@@ -1,0 +1,13 @@
+{
+	"autoAdd": true,
+	"backUp": {
+		"enable": false,
+		"time": 3600000,
+		"count": 2
+	},
+	"autoSave": {
+		"enable": true,
+		"lastRefresh": 1659117601591,
+		"time": 600000
+	}
+}
