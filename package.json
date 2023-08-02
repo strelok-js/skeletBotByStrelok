@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "discord.js": "^14.11.0",
-    "install": "^0.13.0",
     "simple-discord.db": "^0.1.0"
   }
 }

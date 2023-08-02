@@ -1,6 +1,5 @@
 const {InteractionType} = require('discord.js');
-module.exports = async (bot) => {
-
+module.exports = (bot) => bot.on("ready", async ()=> {
     const commands = bot.application.commands;
     await commands.fetch(); //Найти все команды
 
@@ -17,7 +16,7 @@ module.exports = async (bot) => {
     }
     for (const interaction of commands.cache) {
         const command = bot.commands.any.find(el=>el.names.includes(interaction.name));
-        if(!command) interaction.delete();//Если команды нет - удалить слэш команду
+        if(!command&&interaction.delete) interaction.delete();//Если команды нет - удалить слэш команду
     }
 
     bot.on("interactionCreate", async (interaction)=> {
@@ -33,5 +32,5 @@ module.exports = async (bot) => {
             if(CMD) CMD(bot, interaction, argsF, argsF) //Если есть команда - вызвать её.
             .catch(err => console.error(`Error in ${interaction.commandName}: `+err));
         }
-    });
-};
+    });   
+});
